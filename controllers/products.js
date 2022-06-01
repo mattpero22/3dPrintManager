@@ -31,6 +31,12 @@ router.post('/', (req, res) => {
 // edit
 
 // show
-
+router.get('/:id', (req, res) => {
+	Product.findById(req.params.id, (err, foundProduct) => {
+		res.render('product/show.ejs', {
+			product: foundProduct,
+		});
+	});
+});
 
 module.exports = router;

@@ -10,7 +10,7 @@
     <input type="button" value="Add New Product" onclick="window.location.href='/products/new'"/>
     <%products.forEach(product => {%>
         <ul style="list-style: none;">
-			<li><a href="/inventory/<%=product._id%>"><%=product.name;%></a>
+			<li><a href="/products/<%=product._id%>"><%=product.name;%></a>
 				<form action="/inventory/<%=product.id %>?_method=DELETE" method="POST" 
 					style="display:inline; margin-left:16px;">
 				  <input type="submit" value="DELETE" style="background-color: coral;" />
