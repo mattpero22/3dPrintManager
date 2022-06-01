@@ -13,7 +13,10 @@
         ImageURL: <input type="text" name="img" value="<%=product.img%>" placeholder='"imageAddress"'/><br />
         Price: <input type="number" step="0.01" min="0" name="price" value="<%=product.price%>" placeholder="$0.00" /><br />
         Material: <input type="string" name="material" value="<%=product.material%>" placeholder="PLA/ABS/PETG" /><br />
-        Weight: <input type="number" step="0.01" min="0" name="weight" value="<%=product.weight%>" placeholder="0oz" /><br />
+        Weight: <input type="number" step="0.1" min="0" name="weight" value="<%=product.weight%>" placeholder="oz" /><br />
+        Height: <input type="number" step="0.1" min="0" name="height" value="<%=product.weight%>" placeholder="in" /><br />
+        Width: <input type="number" step="0.1" min="0" name="width" value="<%=product.weight%>" placeholder="in" /><br />
+        Depth: <input type="number" step="0.1" min="0" name="depth" value="<%=product.weight%>" placeholder="in" /><br />
         <!-- img: String,
         price: Number,
         description: String,

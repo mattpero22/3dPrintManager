@@ -12,10 +12,16 @@ const productSchema = new mongoose.Schema(
     height: Number,
     width: Number,
     depth: Number,
-    print_time: Number,
     completed: Boolean,
     shipped: Boolean,
-    print_settings: {},    
+    print_settings: {
+        print_time: Number,
+        nozzle_temp: Number,
+        bed_temp: Number,
+        infill_pct: Number,
+        infill_patt: String,
+        
+    },    
 },
     {timestamps: true}
 );

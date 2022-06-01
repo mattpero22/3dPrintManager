@@ -1,9 +1,13 @@
 body {
-    background-color:rgb(123, 162, 90)
+    background-color:whitesmoke
 
 }
 
 input {
     background-color: whitesmoke;
 
+}
+
+.hdr-img {
+    width: 100%;
 }
