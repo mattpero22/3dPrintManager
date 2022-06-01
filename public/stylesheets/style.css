@@ -1,3 +1,9 @@
 body {
-    background-color:khaki;
+    background-color:grey;
+    color: whitesmoke;
+}
+
+input {
+    background-color: slategray;
+    color: whitesmoke;
 }
