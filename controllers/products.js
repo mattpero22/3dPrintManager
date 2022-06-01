@@ -17,8 +17,23 @@ router.get('/new', (req, res) => {
 });
 
 // delete
+router.delete('/:id', (req, res) => {
+	Product.findByIdAndDelete(req.params.id, (error, deletedProduct) => {
+		res.redirect("/products")
+	});
+});
 
 // update
+router.put('/:id', (req, res) => {
+	Product.findByIdAndUpdate(
+		req.params.id,
+		req.body,
+		{ new: true },
+		(error, updatedProduct) => {
+			res.redirect(`/products/${req.params.id}`)
+		}
+	);
+});
 
 // create
 router.post('/', (req, res) => {
@@ -29,6 +44,11 @@ router.post('/', (req, res) => {
 });
 
 // edit
+router.get("/:id/edit", (req, res) => {
+	Product.findById(req.params.id, (error, foundProduct) => {
+	  res.render("product/edit.ejs", { product: foundProduct })
+	})
+})
 
 // show
 router.get('/:id', (req, res) => {
