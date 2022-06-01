@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hits Barry Bonds</title>
+</head>
+<body>
+    <input type="button" value="Add New Product" onclick="window.location.href='/products/new'"/>
+    <%products.forEach(product => {%>
+        <ul style="list-style: none;">
+			<li><a href="/inventory/<%=product._id%>"><%=product.name;%></a>
+				<form action="/inventory/<%=product.id %>?_method=DELETE" method="POST" 
+					style="display:inline; margin-left:16px;">
+				  <input type="submit" value="DELETE" style="background-color: coral;" />
+			  	</form>
+				<input type="button" value="EDIT" 
+				style="background-color: rgb(82, 158, 82); margin-left: 16px;"
+				onclick="window.location.href='/inventory/<%=product._id%>/edit'">
+			</li>
+			</ul>	
+    <%})%>
+</body>
+</html>

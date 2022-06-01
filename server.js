@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 const express = require('express');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const productsController = require('./controllers/products.js');
 const app = express();
 const db = mongoose.connection;
 
@@ -23,7 +24,8 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 
 // routes / controllers
-app.get('/' , (req, res) => res.send('Hello World!'));
+app.get('/' , (req, res) => res.redirect('/products'));
+app.use('/products', productsController);
 
 // app listener
 app.listen(PORT, console.log('Welcome to the 3D print store.'))
