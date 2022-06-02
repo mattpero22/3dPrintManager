@@ -8,6 +8,12 @@ input {
 
 }
 
-.hdr-img {
-    width: 100%;
+.static-logo {
+    width: 18%;
+    margin-right: 15px;
+}
+
+#static-header {
+    display: flex;
+    justify-content: space-around;
 }

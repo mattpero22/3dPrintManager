@@ -21,10 +21,11 @@ db.on('disconnected', () => console.log('mongodb disconnected'));
 app.use(express.static(__dirname + "/public")); // folder for static styles and assets referenced at public
 app.use(express.urlencoded({ extended: false })); // body parser to access req.body
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
-
+ 
 
 // routes / controllers
-app.get('/' , (req, res) => res.redirect('/products'));
+app.get('/' , (req, res) => res.redirect('/home'));
+app.get('/home', (req, res) => res.render('home/home.ejs'))
 app.use('/products', productsController);
 
 // app listener

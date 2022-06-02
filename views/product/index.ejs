@@ -5,7 +5,6 @@
 </head>
 <body>
     <header><%- include('../partials/header.ejs')%></header>
-    <nav><%- include('../partials/nav.ejs') %></nav>
     <%products.forEach(product => {%>
         <ul style="list-style: none;">
 			<li><a href="/products/<%=product._id%>"><%=product.name;%></a>
