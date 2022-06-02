@@ -5,7 +5,7 @@
   </head>
 
   <body>
-    <header><%- include('../partials/header.ejs') %></header>
+    <header><%- include('../partials/adminHeader.ejs') %></header>
     <h2>Edit Product</h2>
     <form action="/products/<%=product._id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=product.name%>" placeholder="My Print" /><br />

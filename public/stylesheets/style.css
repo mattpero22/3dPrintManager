@@ -1,6 +1,7 @@
 body {
-    background-color:whitesmoke
-
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
@@ -8,12 +9,31 @@ input {
 
 }
 
-.static-logo {
-    width: 18%;
-    margin-right: 15px;
-}
-
 #static-header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#logo {
+    display: flex;
+
+}
+
+.static-logo {
+    width: 20%;
+    max-width: 250px;
+    min-width: 88px;
+    margin-right: 15px;
+}
+
+.nav-btn {
+    height: 25px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
 }
