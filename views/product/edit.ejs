@@ -8,6 +8,7 @@
     <header><%- include('../partials/adminHeader.ejs') %></header>
     <h2>Edit Product</h2>
     <form action="/products/<%=product._id%>?_method=PUT" method="POST">
+      <h3>Display Info</h3>
         Name: <input type="text" name="name" value="<%=product.name%>" placeholder="My Print" /><br />
         Description: <input type="text" name="description" value="<%=product.description%>" /><br />
         ImageURL: <input type="text" name="img" value="<%=product.img%>" placeholder='"imageAddress"'/><br />
@@ -17,21 +18,10 @@
         Height: <input type="number" step="0.1" min="0" name="height" value="<%=product.weight%>" placeholder="in" /><br />
         Width: <input type="number" step="0.1" min="0" name="width" value="<%=product.weight%>" placeholder="in" /><br />
         Depth: <input type="number" step="0.1" min="0" name="depth" value="<%=product.weight%>" placeholder="in" /><br />
-        <!-- img: String,
-        price: Number,
-        description: String,
-        color: String,
-        material: String,
-        weight: Number,
-        height: Number,
-        width: Number,
-        depth: Number,
-        print_time: Number,
-        completed: Boolean,
-        shipped: Boolean, -->
-      <br />
+      <h3>Print Settings</h3>
       <input type="submit" value="SUBMIT CHANGES" />
+      <br/>
+      <input type="button" value="CANCEL" onclick="window.location.href='/products'"/>
     </form>
-    <input type="button" value="CANCEL" onclick="window.location.href='/products'"/>
   </body>
 </html>

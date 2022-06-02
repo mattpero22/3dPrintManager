@@ -12,8 +12,6 @@ const productSchema = new mongoose.Schema(
     height: Number,
     width: Number,
     depth: Number,
-    completed: Boolean,
-    shipped: Boolean,
     print_settings: {
         print_time: Number,
         nozzle_temp: Number,
