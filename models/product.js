@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
         bed_temp: Number,
         infill_pct: Number,
         infill_patt: String,
-        
+        support: Boolean
     },    
 },
     {timestamps: true}
