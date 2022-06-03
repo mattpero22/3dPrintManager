@@ -10,7 +10,7 @@
 			<li>
 				<h3 style="display: inline; margin-right: 5px"><%=product.date%></h3>
 				<a href="/products/<%=product._id%>" style="font-size:20px; margin-right: 5px;"><%=product.name;%></a>
-				<img src="" alt="<%=product.name%>">
+				<img src="<%=product.img%>" alt="<%=product.name%>" style="width:120px; border: 2px solid black; border-radius: 5px;">
 				<form action="/products/<%=product.id %>?_method=DELETE" method="POST" style="display:inline; margin-left:16px;">
 				  <input type="submit" value="DELETE" style="background-color: coral;" />
 			  	</form>

@@ -7,7 +7,7 @@
         <header><%- include('../partials/adminHeader.ejs')%></header>
 		<h1><%= product.name %></h1>
 		<p>Description: <%= product.description %></p>
-        <p>Image: <%= product.img %></p>
+        <p>Image: <img src="<%= product.img %>"/></p>
         <p>Price: <%= product.price %></p>
         <p>Material: <%= product.material %></p>
 	</body>
