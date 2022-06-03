@@ -2,10 +2,24 @@
 
 https://pebble-prints.herokuapp.com/
 
+#### Built with:
+- HTML
+- CSS
+- JavaScript
+- Node
+- Express
+- MongoDB
+
 ### Usage:
 - Make a 3D printing catalog leveraging Node, Express, and MogoDB to offer CRUD capability for hobbyist 3D printers.
 - Through logging your prints you can track activity, success rate, and build a reference for future print projects.
 ![Imgur](https://i.imgur.com/pPepyyz.png)
+
+### Current Features
+- Create new prints and add to the log
+- Delete prints from log
+- Reference existing prints and their info
+- Edit existing print information
 
 ### Project Planning:
 - Trello: https://trello.com/b/zVQ2LqGm/3dprintmanager-mpero
