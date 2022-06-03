@@ -21,6 +21,12 @@ https://pebble-prints.herokuapp.com/
 - Reference existing prints and their info
 - Edit existing print information
 
+### Future Work
+- Create users such that multiple people can use the webapp DB
+- Filter entries in the log with search engine
+- Provide graphics and analytics on prints
+- Provide conversions/unit settings for dimensions and weight
+
 ### Project Planning:
 - Trello: https://trello.com/b/zVQ2LqGm/3dprintmanager-mpero
 - Wireframe Planning: https://www.figma.com/file/eMw1BOZmDN9iWbQ4QQw3Sk/wireframe-planning?node-id=0%3A1
