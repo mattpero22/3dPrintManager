@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const productSchema = new mongoose.Schema(
 {
     name: {type: String, required:true},
+    date: String,
     img: String,
     price: Number,
     description: String,
@@ -12,15 +13,13 @@ const productSchema = new mongoose.Schema(
     height: Number,
     width: Number,
     depth: Number,
-    print_settings: {
-        print_time: Number,
-        nozzle_temp: Number,
-        bed_temp: Number,
-        infill_pct: Number,
-        infill_patt: String,
-        support: Boolean,
-        success: Boolean
-    },    
+    print_time: Number,
+    nozzle_temp: Number,
+    bed_temp: Number,
+    infill_pct: Number,
+    infill_patt: String,
+    support: Boolean,
+    success: Boolean   
 },
     {timestamps: true}
 );

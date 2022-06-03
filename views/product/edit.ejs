@@ -10,19 +10,24 @@
     <form action="/products/<%=product._id%>?_method=PUT" method="POST">
       <h3>Display Info</h3>
         Name: <input type="text" name="name" value="<%=product.name%>" placeholder="My Print" /><br />
+        Date: <input type="text" name="date" value="<%=product.date%>" placeholder="date of print" /><br />
         Description: <input type="text" name="description" value="<%=product.description%>" /><br />
         ImageURL: <input type="text" name="img" value="<%=product.img%>" placeholder='"imageAddress"'/><br />
         Material: <input type="string" name="material" value="<%=product.material%>" placeholder="PLA/ABS/PETG" /><br />
         Weight: <input type="number" step="0.1" min="0" name="weight" value="<%=product.weight%>" placeholder="oz" /><br />
-        Height: <input type="number" step="0.1" min="0" name="height" value="<%=product.weight%>" placeholder="in" /><br />
-        Width: <input type="number" step="0.1" min="0" name="width" value="<%=product.weight%>" placeholder="in" /><br />
-        Depth: <input type="number" step="0.1" min="0" name="depth" value="<%=product.weight%>" placeholder="in" /><br />
+        Height: <input type="number" step="0.1" min="0" name="height" value="<%=product.height%>" placeholder="in" /><br />
+        Width: <input type="number" step="0.1" min="0" name="width" value="<%=product.width%>" placeholder="in" /><br />
+        Depth: <input type="number" step="0.1" min="0" name="depth" value="<%=product.depth%>" placeholder="in" /><br />
       <h3>Print Settings</h3>
-        Nozzle Temp: <input type="number" min="0" name="depth" value="<%=product.weight%>" placeholder="in" /><br />
-        Bed Temp: <input type="number" min="0" name="depth" value="<%=product.weight%>" placeholder="in" /><br />
+        Nozzle Temp: <input type="number" min="0" name="nozzle_temp" value="<%=product.nozzle_temp%>" placeholder="F" /><br />
+        Bed Temp: <input type="number" min="0" name="bed_temp" value="<%=product.bed_temp%>" placeholder="F" /><br />
+        Infill Percent: <input type="range" min="0" max="100" name="infill_pct" value="<%=product.infill_pct%>" placeholder="" /><br />
+        Infill Pattern: <input type="string" name="infill_patt" value="<%=product.infill_patt%>" placeholder="" /><br />
+        Support: <input type="checkbox" name="support" value="<%=product.support%>" ><br />
+        Success: <input type="checkbox" name="success" value="<%=product.success%>" /><br />
       <h3>Additional Notes</h3>
-      <input type="submit" value="SUBMIT CHANGES" />
-      <br/>
+      <textarea name="notes" cols="50" rows="5"></textarea><br/>
+      <input type="submit" value="SUBMIT CHANGES" /><br/>
       <input type="button" value="CANCEL" onclick="window.location.href='/products'"/>
     </form>
   </body>
