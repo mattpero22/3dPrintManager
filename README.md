@@ -2,19 +2,30 @@
 
 https://pebble-prints.herokuapp.com/
 
-### Project Idea:
-- Make a 3D printing store manager leveraging Node, Express, and MogoDB to offer CRUD capability for employees.
-- Allow users to browse a selection of items and place custom orders.
+#### Built with:
+- HTML
+- CSS
+- JavaScript
+- Node
+- Express
+- MongoDB
 
-###### Employees
-- Can CRUD 3D print models from the store's database
-- Can view placed/pending orders
-- Can view shipped orders
+### Usage:
+- Make a 3D printing catalog leveraging Node, Express, and MogoDB to offer CRUD capability for hobbyist 3D printers.
+- Through logging your prints you can track activity, success rate, and build a reference for future print projects.
+![Imgur](https://i.imgur.com/pPepyyz.png)
 
-###### Customers
-- Can create a user account
-- Can view order history and review 
-- Can view items in shop and place orders
+### Current Features
+- Create new prints and add to the log
+- Delete prints from log
+- Reference existing prints and their info
+- Edit existing print information
+
+### Future Work
+- Create users such that multiple people can use the webapp DB
+- Filter entries in the log with search engine
+- Provide graphics and analytics on prints
+- Provide conversions/unit settings for dimensions and weight
 
 ### Project Planning:
 - Trello: https://trello.com/b/zVQ2LqGm/3dprintmanager-mpero
