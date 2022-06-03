@@ -5,7 +5,7 @@ https://pebble-prints.herokuapp.com/
 ### Usage:
 - Make a 3D printing catalog leveraging Node, Express, and MogoDB to offer CRUD capability for hobbyist 3D printers.
 - Through logging your prints you can track activity, success rate, and build a reference for future print projects.
-![home]("https://i.imgur.com/pPepyyz.png")
+[Imgur](https://i.imgur.com/pPepyyz.png)
 
 ### Project Planning:
 - Trello: https://trello.com/b/zVQ2LqGm/3dprintmanager-mpero
