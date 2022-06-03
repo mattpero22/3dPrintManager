@@ -7,8 +7,17 @@
         <header><%- include('../partials/adminHeader.ejs')%></header>
 		<h1><%= product.name %></h1>
 		<p>Description: <%= product.description %></p>
-        <p>Image: <img src="<%= product.img %>"/></p>
-        <p>Price: <%= product.price %></p>
-        <p>Material: <%= product.material %></p>
+		<p>Material: <%= product.material %></p>
+        <p>Image: <img style="max-width: 500px;" src="<%= product.img %>"/></p>
+		<h3>Dimensions</h3>
+		<p>Height: <%=product.height%></p>
+		<p>Width: <%=product.width%></p>
+		<p>Depth: <%=product.depth%></p>
+		<p>Weight: <%=product.weight%></p>
+		<h3>Print Settings</h3>
+		<p>Nozzle Temp: <%=product.nozzle_temp%></p>
+        <p>Bed Temp: <%=product.bed_temp%></p>
+        <p>Infill Percent: <%=product.infill_pct%></p>
+        <p>Infill Pattern: <%=product.infill_patt%></p>
 	</body>
 </html>

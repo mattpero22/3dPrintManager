@@ -13,6 +13,7 @@
         Description: <input type="text" name="description"/><br />
         ImageURL: <input type="text" name="img" placeholder='"imageAddress"'/><br />
         Material: <input type="string" name="material" placeholder="PLA/ABS/PETG" /><br />
+        Color: <input type="string" name="color"><br />
         Weight: <input type="number" step="0.1" min="0" name="weight" placeholder="oz" /><br />
         Height: <input type="number" step="0.1" min="0" name="height" placeholder="in" /><br />
         Width: <input type="number" step="0.1" min="0" name="width" placeholder="in" /><br />
@@ -20,13 +21,11 @@
       <h3>Print Settings</h3>
         Nozzle Temp: <input type="number" min="0" name="nozzle_temp" placeholder="F" /><br />
         Bed Temp: <input type="number" min="0" name="bed_temp" placeholder="F" /><br />
-        Infill Percent: <input type="range" min="1" max="100" oninput="this.nextElementSibling.value = this.value"/><output></output><br />
+        Infill Percent: <input type="range" name="infill_pct"min="1" max="100" oninput="this.nextElementSibling.value = this.value"/><output></output><br />
         Infill Pattern: <input type="string" name="infill_patt"/><br />
-        Support: <input type="checkbox" name="support"/><br />
-        Success: <input type="checkbox" name="success"/><br />
       <h3>Additional Notes</h3>
       <textarea name="notes" cols="50" rows="5"></textarea><br/>
-        <input type="submit" value="Add Print" />
+    <input type="submit" value="Add Print" />
     </form>
 </body>
 </html>

@@ -21,10 +21,8 @@
       <h3>Print Settings</h3>
         Nozzle Temp: <input type="number" min="0" name="nozzle_temp" value="<%=product.nozzle_temp%>" placeholder="F" /><br />
         Bed Temp: <input type="number" min="0" name="bed_temp" value="<%=product.bed_temp%>" placeholder="F" /><br />
-        Infill Percent: <input type="range" min="0" max="100" name="infill_pct" value="<%=product.infill_pct%>" placeholder="" /><br />
+        Infill Percent: <input type="range" min="0" max="100" name="infill_pct" value="<%=product.infill_pct%>"oninput=" this.nextElementSibling.value = this.value"/><output></output><br />
         Infill Pattern: <input type="string" name="infill_patt" value="<%=product.infill_patt%>" placeholder="" /><br />
-        Support: <input type="checkbox" name="support" value="<%=product.support%>" ><br />
-        Success: <input type="checkbox" name="success" value="<%=product.success%>" /><br />
       <h3>Additional Notes</h3>
       <textarea name="notes" cols="50" rows="5"></textarea><br/>
       <input type="submit" value="SUBMIT CHANGES" /><br/>

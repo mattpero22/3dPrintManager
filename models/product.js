@@ -19,7 +19,8 @@ const productSchema = new mongoose.Schema(
     infill_pct: Number,
     infill_patt: String,
     support: Boolean,
-    success: Boolean   
+    success: Boolean  , 
+    notes: String
 },
     {timestamps: true}
 );
