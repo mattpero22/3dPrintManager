@@ -6,6 +6,7 @@ https://pebble-prints.herokuapp.com/
 - HTML
 - CSS
 - JavaScript
+- EJS
 - Node
 - Express
 - MongoDB
