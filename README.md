@@ -10,6 +10,8 @@ https://pebble-prints.herokuapp.com/
 - Node
 - Express
 - MongoDB
+- Mocha / Chai
+- Docker
 
 ### Usage:
 - Make a 3D printing catalog leveraging Node, Express, and MogoDB to offer CRUD capability for hobbyist 3D printers.
@@ -21,6 +23,7 @@ https://pebble-prints.herokuapp.com/
 - Delete prints from log
 - Reference existing prints and their info
 - Edit existing print information
+- Automated testing of models and controllers during development
 
 ### Future Work
 - Create users such that multiple people can use the webapp DB
